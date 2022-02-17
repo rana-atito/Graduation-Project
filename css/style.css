@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url(/imgs/bg.jpg) no-repeat !important;
+    background-size: cover;
+    /* background-repeat:repeat; */
+    font-family: 'Lora', serif;
+}
+
+nav{
+    background-color: rgb(30,30,30);
+}
+.site-name{
+    font-size: 25px;
+    font-weight:600;
+}
+
+.card{
+    border-radius: 0.5cm;
+    background-color: rgba(41, 15, 45, 0.5);
+    margin-bottom: 10px;
+    
+}
+.card img{
+    border-radius: 0.3cm;
+    min-height: 205px;
+}
+.card-title{
+    text-align: center;
+    font-weight:bold ;
+    font-size: 25px;
+    margin: 10px;
+    color: white;
+    position: relative;
+}
+.card p{
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+/* Doctors Section */
+
+.doctors, .patients {
+    font-weight: bold;
+}
+
+.doctors img, .patients img {
+    border-radius: 50px;
+}
+
+.doctors h2, .patients h2 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.doctors p, .patients p {
+    font-size: 22px;
+    opacity: 0.8;
+}
+
+.doctors a, .patients a {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* media responsive */
+@media only screen and (max-width: 992px) and (min-width: 766px) {
+    .doctors h2, .patients h2 {
+        font-size: 30px;
+    }
+    
+    .doctors p, .patients p {
+        font-size: 14px;
+        opacity: 0.8;
+    }
+    
+    .doctors a, .patients a {
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 765px) and (min-width: 0px) {
+    .doctors img, .patients img {
+        width: 75%;
+    }
+
+    .doctors h2, .patients h2 {
+        font-size: 20px;
+    }
+    
+    .doctors p, .patients p {
+        font-size: 12px;
+        opacity: 0.8;
+    }
+    
+    .doctors a, .patients a {
+        font-size: 12px ;
+        cursor: pointer;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
