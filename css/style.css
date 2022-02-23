@@ -48,7 +48,7 @@ nav{
     text-align: center;
 }
 
-/* Doctors Section */
+/* Doctors patients Section */
 
 .doctors, .patients {
     font-weight: bold;
@@ -93,8 +93,6 @@ nav{
     width: 50%;
     height: 70%;
     
-    
-    
 }
 
 .hospital img{
@@ -119,13 +117,13 @@ nav{
 
 
 /* media responsive */
-
+/* larg screen */
 @media only screen and (max-width: 992px) and (min-width: 766px) {
-    .doctors h2, .patients h2 .hospital h2{
+    .doctors h2, .patients h2, .hospital h2{
         font-size: 30px;
     }
     
-    .doctors p, .patients p .hospital p{
+    .doctors p, .patients p, .hospital p{
         font-size: 14px;
         opacity: 0.8;
     }
@@ -138,8 +136,11 @@ nav{
     .hospital .location-map{
         height: 334px;  
     }
+    footer .about-us-text{
+        font-size: 13px;
+    }
 }
-
+/* small screen */
 @media only screen and (max-width: 765px) and (min-width: 0px) {
     .doctors img, .patients img {
         width: 75%;
@@ -161,8 +162,5 @@ nav{
 
     
 
-    .hospital .location-map{
-        
-        /* justify-content: center;  */
-    }
+   
 }
